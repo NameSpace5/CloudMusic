@@ -4,3 +4,5 @@
 
 使用方式：
 请参阅CSDN博客：http://blog.csdn.net/Z_DingHao/article/details/77512886
+
+加密分析请参阅wiki，如有想法欢迎交流探讨。
