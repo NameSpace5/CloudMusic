@@ -58,17 +58,29 @@ class MusicApi {
     /**
      * 热门评论获取,返回CommentResult
      * @param musicId 目标评论的音乐Id
+     */
+    fun hotComments(musicId:String):HotCommentResult{
+        val hotBean = HotCommentResult::class
+
+        val action_url = ACTION_URL_COMMENTS + musicId
+        val map = encrypted_comments(musicId,1,20)
+        val result = client.requestPostSyn(BASE_URL_163, action_url,map)
+        return Gson().fromJson(result, hotBean.javaObjectType)
+    }
+
+    /**
+     * 评论获取，第一页comments为最新评论，hotComments为热门评论，第二页之后不再有hotComments
+     * @param musicId 目标评论的音乐Id
      * @param page 页数
      * @param count 获取评论数量
      */
-    fun hotComments(musicId:String,page:Int,count:Int):HotCommentResult{
-        val hotBean = HotCommentResult::class
+    fun comments(musicId: String,page: Int,count:Int):CommentResult{
+        val commentBean = CommentResult::class
 
         val action_url = ACTION_URL_COMMENTS + musicId
         val map = encrypted_comments(musicId,page,count)
         val result = client.requestPostSyn(BASE_URL_163, action_url,map)
-        
-        return Gson().fromJson(result, hotBean.javaObjectType)
+        return Gson().fromJson(result, commentBean.javaObjectType)
     }
 
 

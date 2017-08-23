@@ -67,6 +67,10 @@ data class ArtistsResult(val artists:List<Artist>,val artistCount:Int)
 data class HotCommentResult(val hotComments:List<HotComment>,val isMusician:Boolean,val moreHot: Boolean,
                             val comments:List<Comment>,val total:Long,val more:Boolean,val code:Int)
 
+//最新评论
+data class CommentResult(val isMusician:Boolean,val moreHot: Boolean,
+                         val comments:List<Comment>,val total:Long,val more:Boolean,val code:Int)
+
 //登陆result
 data class LoginResult(val loginType:Int,val code:Int,val account: Account,val profile: Profile,val bindings: List<Binding>)
 
