@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CloudMusic/CloudMusic.iml" filepath="$PROJECT_DIR$/.idea/modules/CloudMusic/CloudMusic.iml" group="CloudMusic" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Music.iml" filepath="$PROJECT_DIR$/.idea/modules/Music.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Music_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Music_main.iml" group="Music" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Music_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Music_test.iml" group="Music" />
+    </modules>
+  </component>
+</project>
